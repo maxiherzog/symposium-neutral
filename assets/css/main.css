@@ -1,0 +1,43 @@
+/** Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,700&display=swap");
+
+/** Basic styling */
+body {
+  font-family: "Poppins", cursive;
+  height: 100%;
+  display: flex;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #272727;
+  background-color: #fdfdfd;
+  background-color: #efefef;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+
+h1 {
+  font-size: 16rem;
+  line-height: 0.9;
+  margin-bottom: 0.5rem;
+}
+
+#noise {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  mix-blend-mode: hard-light;
+  opacity: 0.4;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 100;
+  pointer-events: none;
+}
