@@ -10,6 +10,16 @@
     <canvas id="noise"></canvas>
     <script src="{{ site.baseurl }}/assets/js/noise-overlay.js"></script>
 
+    <!-- nav bar -->
+    <ul class="navbar">
+      {% for item in site.data.sitelist.sites %}
+        {{item.name}}
+        <li class="{% if site.baseurl + item.url == page.url %}active{% endif %}">
+          <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
     {{ content }}
   </body>
 </html>

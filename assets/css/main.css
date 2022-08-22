@@ -23,6 +23,23 @@ body {
   margin: 0;
 }
 
+/** Links */
+a {
+  color: #272727;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #272727;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+.navbar li.active a {
+  color: #383838;
+  cursor: default;
+}
+
 h1 {
   font-size: 16rem;
   line-height: 0.9;
@@ -40,4 +57,17 @@ h1 {
   background-color: rgba(255, 255, 255, 0.1);
   z-index: 100;
   pointer-events: none;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 4rem;
+  padding-left: 15px;
+}
+
+.navbar * {
+  display: inline;
+  padding-right: 20px;
 }

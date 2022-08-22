@@ -6,4 +6,4 @@ layout: main
 title: Home
 ---
 
-<h1>{{ "Heidelberger Symposium"}}</h1>
+<h1>{{"Heidelberger Symposium"}}</h1>

@@ -1,0 +1,12 @@
+sites:
+- title: HS
+  url: /
+
+- title: BLOG
+  url: /blog
+
+- title: ÜBER UNS
+  url: /about
+
+- title: ARCHIV
+  url: /history
